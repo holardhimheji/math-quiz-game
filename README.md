@@ -21,3 +21,5 @@ It generates random math problems using `+`, `-`,'/' and '*' and checks if your 
 3. Get your result
 4. Click **Next** to return to the start and play again
 
+#Author 
+Oladapo Quareeb
