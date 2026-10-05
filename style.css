@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  }
+body {
+  background: linear-gradient(135deg, #667eea 0%, #0812a0 100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 10%;
+}
+.container{
+  background: white;
+  width: 100%;
+  max-width: 500px; 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  align-items: center;
+}
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  }
+#problem {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin: 30px 0;
+  min-height: 60px;
+}
+button{
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #0812a0;
+  transform: scale(1);
+}
+
+#answers{
+  display: none;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.main input {
+  max-width: 100px;
+  flex: 1;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.btns {
+  position: relative;
+  width: 90px;
+  height: 35px;
+}
+
+.btns button {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.btn1 {
+  z-index: 2;
+  border: none;
+}
+
+.btn2 {
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  h1 { font-size: 1.5rem; }
+  #problem { font-size: 2rem; }
+  .container { padding: 20px; }
+}
+    @media (max-width: 480px) {
+      h1 { font-size: 1.2rem; }
+      #problem { font-size: 1.5rem; }
+      button { font-size: 1rem; padding: 12px; }
+    }
